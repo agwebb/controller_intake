@@ -1,6 +1,7 @@
 import math
 from inputs import get_gamepad
 import threading
+from time import sleep
 #source for this code, used to learn threading and object names.
 #https://stackoverflow.com/questions/46506850/how-can-i-get-input-from-an-xbox-one-controller-in-python
 class Controller():
@@ -110,5 +111,6 @@ if __name__ == '__main__':
     readings = Controller()
     while True:
         print(readings.controller_read())
+        sleep(1)
 
 
